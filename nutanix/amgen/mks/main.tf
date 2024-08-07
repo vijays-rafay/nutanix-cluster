@@ -70,7 +70,7 @@ variable "cluster_labels" {
   type        = map
   default = {
     env = "development"
-    email = "suryakant@rafay.co"
+    costcenter  = "xyz1234"
   }
 }
 
