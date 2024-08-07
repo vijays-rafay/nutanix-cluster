@@ -26,7 +26,7 @@ resource "nutanix_virtual_machine" "vm" {
   }
   for_each             = setunion(var.masters, var.workers)
   name                 = "${var.vm_name}-${each.key}"
-  description          = var.vm_description 
+  description          = "${var.vm_name}-${each.key}" 
   cluster_uuid         = var.cluster_uuid
   num_vcpus_per_socket = var.vcpus_per_socket
   num_sockets          = var.num_sockets

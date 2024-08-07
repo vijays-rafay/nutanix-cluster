@@ -26,13 +26,13 @@ variable "nutanix_port" {
 #  default = 9440
 }
 
-variable "vm_name" {
-  type = string
-}
+#variable "vm_name" {
+#  type = string
+#}
 
-variable "vm_description" {
-  type = string
-}
+#variable "vm_description" {
+#  type = string
+#}
 
 variable "cluster_uuid" {
   type = string

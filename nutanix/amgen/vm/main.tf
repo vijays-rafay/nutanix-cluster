@@ -29,7 +29,7 @@ module "nutainx_vm" {
   masters = var.masters
   workers = var.workers 
   vm_name = var.vm_prefix
-  vm_description = var.vm_description
+  #vm_description = var.vm_description
   cluster_uuid = var.cluster_uuid 
   vcpus_per_socket = var.vcpus_per_socket
   num_sockets   = var.num_sockets
