@@ -110,7 +110,7 @@ locals {
               privateip       = i.privateip
               operatingSystem = "Ubuntu22.04"
               arch            = "amd64"
-              roles           = ["Master"]
+              roles           = var.cluster_dedicated_masters ? ["Master"] : ["Master", "Worker"]
               ssh             = {
                 username      = "ubuntu"
                 ipAddress     = i.privateip
