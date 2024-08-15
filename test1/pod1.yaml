@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod1
+  #labels:
+  #  testlabel: $(#environment["fmenv"].testout)$
+spec:
+  containers:
+  - command:
+    - sleep
+    - "60000"
+    image: busybox:latest
+    imagePullPolicy: Always
+    name: test 
+
